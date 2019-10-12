@@ -16,7 +16,8 @@
   "dependencies": {
     "dotenv": "^8.0.0",
     "express": "^4.16.4",
-    "mongoose": "^5.5.13"
+    "mongoose": "^5.5.13",
+    "redis": "^2.8.0"
   },
   "devDependencies": {
     "eslint": "^6.0.0",

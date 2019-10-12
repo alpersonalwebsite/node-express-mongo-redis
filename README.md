@@ -144,6 +144,36 @@ Result:
 ]
 ```
 
+## This: function keyword vs fat arrow
+
+Example:
+```javascript
+console.clear()
+
+function Friend(name) {
+
+}
+
+const person1 = new Friend('Peter')
+
+Friend.prototype.greeting = function() {
+  console.log(this)
+}
+
+Friend.prototype.salutation = () => {
+  console.log(this)
+}
+
+person1.greeting()
+person1.salutation()
+```
+
+Result:
+```
+Friend {}
+Window
+```
+
 ## Mongoose deprecations
 https://mongoosejs.com/docs/deprecations.html
 
